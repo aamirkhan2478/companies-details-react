@@ -40,7 +40,7 @@ const fetchCompanies = createAsyncThunk(
   async (args, { dispatch }) => {
     try {
       const { data } = await axios.get(
-        `${baseUrl}/dowjones_constituent?apikey=c72f83b1dfc59f79c4cdee3c9b93c7f4`,
+        `${baseUrl}/dowjones_constituent?limit=10&apikey=5de9ce7b33e08abd599a934eeeceda62`,
       );
 
       const fetchData = data.map((company) => ({
@@ -63,11 +63,28 @@ const fetchBySymbol = createAsyncThunk(
   async (companyName, { dispatch }) => {
     try {
       const { data } = await axios.get(
-        `${baseUrl}/profile/${companyName}?apikey=c72f83b1dfc59f79c4cdee3c9b93c7f4`,
+        `${baseUrl}/profile/${companyName}?apikey=5de9ce7b33e08abd599a934eeeceda62`,
       );
+
+      const fetchData = data.map((company) => ({
+        name: company.companyName,
+        ceo: company.ceo,
+        symbol: company.symbol,
+        price: company.price,
+        city: company.city,
+        website: company.website,
+        country: company.country,
+        image: company.image,
+        address: company.address,
+        range: company.range,
+        fullTimeEmployees: company.fullTimeEmployees,
+        phone: company.phone,
+        industry: company.industry,
+      }));
+
       dispatch({
         type: FETCH_COMPANIES_BY_SYMBOL,
-        payload: data,
+        payload: fetchData[0],
       });
     } catch (error) {
       console.log(error.message);
