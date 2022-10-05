@@ -8,12 +8,13 @@ import { fetchCompanies } from '../Redux/Companies/companies';
 
 const Companies = () => {
   const { companies } = useSelector((state) => state.company);
-  const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(fetchCompanies());
   }, []);
-
   return (
     <>
       <div className="container">

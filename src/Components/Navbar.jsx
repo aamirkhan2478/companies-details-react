@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaAngleLeft, FaMicrophone, FaRegSun } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../assets/styles/navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { companiesBySymbol } = useSelector((state) => state.company);
   return (
     <header>
       <nav className="navbar">
@@ -21,7 +23,7 @@ const Navbar = () => {
             {location.pathname === '/' ? (
               <p>Papular Companies</p>
             ) : (
-              <p>Company Name</p>
+              <p>{companiesBySymbol.name}</p>
             )}
           </li>
           <li>
