@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="container"
+  >
+    <h3>
+      Industrial Average
+    </h3>
+  </div>,
+  <div
+    className="bg-pink"
+  >
+    <h3>
+      Companies Name
+    </h3>
+    <div
+      className="row"
+    />
+  </div>,
+]
+`;
