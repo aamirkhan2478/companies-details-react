@@ -73,6 +73,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## Acknowledgments
 
+- Thanks [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for Original design idea.
 - Hat tip to anyone whose code was used :beginner:
 - Inspiration :cupid:
 - Microverse program :zap:
