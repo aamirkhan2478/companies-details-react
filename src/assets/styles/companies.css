@@ -37,3 +37,37 @@
   color: #fff;
   font-size: 20px;
 }
+
+.f-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 10px;
+  gap: 5px;
+}
+
+.f-box select{
+  width: 150px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.text-field{
+  background-color: #fff;
+  width: 50%;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.text-field input{
+  outline-style: none;
+  border: none;
+  height: 30px;
+  width: 53%;
+  font-size: 12px;
+}
+
+.search-icon{
+  margin-left: 70px;
+}

@@ -1,6 +1,6 @@
 # Companies Details
 
-This is simple react web application you can see all companies details.
+This is simple react web application you can see companies information and also see the particular company full details.
 
 ## Built With
 
@@ -12,7 +12,21 @@ This is simple react web application you can see all companies details.
 
 ## Screen Shots
 
+### Home Page
+
+![home-page](./src/assets/screen%20shots/home-page.png)
+
+### Details Page
+
+![details-page](./src/assets/screen%20shots/details-page.png)
+
 ## Live Preview
+
+[Live Preview](https://companies-information.netlify.app)
+
+## Vide Documentation
+
+[Watch Video](https://drive.google.com/file/d/18I0MSA-wx-_5fPwyKz18UPAPDGZIEF-c/view?usp=sharing)
 
 ## Getting Started
 
