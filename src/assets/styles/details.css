@@ -1,0 +1,40 @@
+.main-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  color: #fff;
+}
+
+.row-1 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.row-1 > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+  color: #fff;
+}
+
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 30px;
+  margin: 10px 0 5px 0;
+}
+
+.row-1:nth-child(odd) {
+  background-color: #dc6a98;
+}

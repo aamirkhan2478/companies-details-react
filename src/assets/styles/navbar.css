@@ -1,0 +1,16 @@
+.navbar {
+  background-color: rgba(205, 111, 148, 1);
+}
+
+header {
+  width: 100vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  list-style: none;
+  color: #fff;
+}
